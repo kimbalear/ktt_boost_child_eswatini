@@ -1,5 +1,13 @@
+// maverick color palete
+
+$mav-primary: #000000;
+$mav-primary-s: #F26A5E;
+
+$mav-secondary: #F9CAAA;
+$mav-secondary-s: #E8E4D6;
+
 #page-content {
-  background-color: green;
+  background-color: $mav-secondary-s;
 }
 .section .activity .activityinstance {
   min-width: 10%;
