@@ -3,6 +3,11 @@
 https://hub.docker.com/r/bitnami/moodle
 
 docker ps
-docker exec -it <nombre_o_id_del_contenedor> bash
+docker exec -it joaqu-moodle-1 bash
 cd /bitnami/moodle
 ls
+
+docker ps
+docker cp D:\01NSP\repositories\ddMood\ktt_boost_child joaqu-moodle-1:/bitnami/moodle/theme/
+docker exec -it joaqu-moodle-1 bash
+ls /bitnami/moodle/theme/
