@@ -56,7 +56,7 @@ cd /bitnami/moodle
 ls
 
 docker ps
-docker cp D:\01NSP\repositories\ddMood\ktt_boost_child joaqu-moodle-1:/bitnami/moodle/theme/ktt_boost_child
+docker cp D:\01NSP\repositories\ddMood\ktt_boost_child\child joaqu-moodle-1:/bitnami/moodle/theme/ktt_boost_child
 
 docker exec -it joaqu-moodle-1 bash
 ls /bitnami/moodle/theme/ktt_boost_child/
