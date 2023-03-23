@@ -1,4 +1,12 @@
-.drawers {
-    padding-left: 0;
-    padding-right: 0;
+#page-content {
+  background-color: $bk;
+}
+.section .activity .activityinstance {
+  min-width: 10%;
+}
+
+
+#page.drawers {
+	padding-left: 0px!important;
+	padding-right: 0px!important;
 }

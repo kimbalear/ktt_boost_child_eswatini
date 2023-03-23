@@ -93,6 +93,7 @@ ol, li {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
+  height: calc(100vh - 160px);
   background-color: #f99;
   counter-increment: item;
 }
@@ -194,15 +195,33 @@ ol, li {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
-.sec1, .sec2 {
+#page-content {
+  background-color: #FFF;
+}
+
+.section .activity .activityinstance {
+  min-width: 10%;
+}
+
+#page.drawers {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.wrapper_home {
+  width: 100%;
+  max-width: 830px;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+.wrapper_home .sec1,
+.wrapper_home .sec2 {
   min-height: 300px;
 }
-
-.sec1 {
+.wrapper_home .sec1 {
   background-color: #99f;
 }
-
-.sec2 {
+.wrapper_home .sec2 {
   background-color: #f99;
 }
 
