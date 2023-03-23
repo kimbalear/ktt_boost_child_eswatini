@@ -71,8 +71,7 @@ $templatecontext = [
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
     'headercontent' => $headercontent,
     'overflow' => $overflow,
-    'addblockbutton' => $addblockbutton,
-    'myname' => 'Joaquin Urbano Serra 3'
+    'addblockbutton' => $addblockbutton
 ];
 
 echo $OUTPUT->render_from_template('theme_boost/columns2', $templatecontext);
