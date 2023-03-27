@@ -186,3 +186,5 @@ $THEME->layouts = [
         'defaultregion' => 'side-pre'
     )
 ];
+
+$THEME->javascripts_footer = array('custom');

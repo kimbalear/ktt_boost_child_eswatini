@@ -42,7 +42,8 @@
 }
 * {
   box-sizing: border-box;
-  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-color: transparent transparent;
+  /* thumb and track color */
   scrollbar-width: 0px;
 }
 
@@ -63,7 +64,8 @@
   -ms-overflow-style: none;
 }
 
-ol, li {
+ol,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
