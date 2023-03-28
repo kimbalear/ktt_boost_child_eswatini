@@ -217,7 +217,7 @@
 
 .wrapper_home {
   width: 100%;
-  max-width: 830px;
+  max-width: 814px;
   padding: 0 8px;
   margin: 0 auto;
 }
@@ -251,6 +251,48 @@
 
 h2 {
   margin: 50px 0 25px;
+}
+
+.myFooter {
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  background-color: #333;
+}
+.myFooter .myFooter_wrp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  max-width: 814px;
+  margin: 0 auto;
+  grid-template-areas: "footer_logo footer_menu1 footer_menu2" "footer_cr footer_cr footer_cr";
+}
+.myFooter .myFooter_wrp .footer_logo {
+  justify-self: center;
+  align-self: start;
+  grid-area: footer_logo;
+}
+.myFooter .myFooter_wrp .footer_logo .logo {
+  width: 100%;
+  height: auto;
+}
+.myFooter .myFooter_wrp .footer_menu1 {
+  grid-area: footer_menu1;
+  color: #E8E4D6;
+}
+.myFooter .myFooter_wrp .footer_menu2 {
+  grid-area: footer_menu2;
+  color: #E8E4D6;
+}
+.myFooter .myFooter_wrp .footer_cr {
+  align-self: center;
+  grid-area: footer_cr;
+}
+.myFooter .myFooter_wrp .footer_cr p {
+  text-align: center;
+  color: #E8E4D6;
 }
 
 /*# sourceMappingURL=custom.css.map */

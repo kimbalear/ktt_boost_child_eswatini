@@ -105,6 +105,7 @@ $templatecontext = [
     'overflow' => $overflow,
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
+    'imagegirlpower' => $OUTPUT->image_url('eswatini/girlPower', 'theme'),
     'imageone' => $OUTPUT->image_url('imgs/img14', 'theme'),
     'imagetwo' => $OUTPUT->image_url('imgs/img13', 'theme'),
     'imagethree' => $OUTPUT->image_url('imgs/img2', 'theme'),

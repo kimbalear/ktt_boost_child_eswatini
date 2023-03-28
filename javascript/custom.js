@@ -13,8 +13,6 @@ require(['jquery'], function ($) {
       return false;
     });
 
-    console.log("JQuery ?")
-
     // Slider configuration
 
     var $slides = document.querySelectorAll('.myslide');
@@ -66,7 +64,5 @@ require(['jquery'], function ($) {
     };
 
     // fin slider
-
-    console.log("final ---->>")
   });
 });
