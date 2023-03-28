@@ -105,6 +105,11 @@ $templatecontext = [
     'overflow' => $overflow,
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
+    'imageone' => $OUTPUT->image_url('imgs/img14', 'theme'),
+    'imagetwo' => $OUTPUT->image_url('imgs/img13', 'theme'),
+    'imagethree' => $OUTPUT->image_url('imgs/img2', 'theme'),
+    'imagefour' => $OUTPUT->image_url('imgs/img6', 'theme'),
+    'imagefive' => $OUTPUT->image_url('imgs/img4', 'theme'),
     'myname' => 'Joaquin Urbano'
 ];
 
