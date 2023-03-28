@@ -16,21 +16,55 @@ require(['jquery'], function ($) {
     console.log("JQuery ?")
 
     // Slider configuration
-    var images = $('.slider img');
-    var currentIndex = 0;
 
-    images.eq(currentIndex).addClass('active');
+    var $slides = document.querySelectorAll('.myslide');
+    var $controls = document.querySelectorAll('.slider__control');
+    var numOfSlides = $slides.length;
+    var slidingAT = 1300; // sync this with scss variable
+    var slidingBlocked = false;
 
-    setInterval(function () {
-      images.eq(currentIndex).removeClass('active');
+    [].slice.call($slides).forEach(function ($el, index) {
+      var i = index + 1;
+      $el.classList.add('slide-' + i);
+      $el.dataset.slide = i;
+    });
 
-      currentIndex++;
-      if (currentIndex >= images.length) {
-        currentIndex = 0;
-      }
+    [].slice.call($controls).forEach(function ($el) {
+      $el.addEventListener('click', controlClickHandler);
+    });
 
-      images.eq(currentIndex).addClass('active');
-    }, 3000);
+    function controlClickHandler() {
+      if (slidingBlocked) return;
+      slidingBlocked = true;
+
+      var $control = this;
+      var isRight = $control.classList.contains('m--right');
+      var $curActive = document.querySelector('.myslide.s--active');
+      var index = +$curActive.dataset.slide;
+      (isRight) ? index++ : index--;
+      if (index < 1) index = numOfSlides;
+      if (index > numOfSlides) index = 1;
+      var $newActive = document.querySelector('.slide-' + index);
+
+      $control.classList.add('a--rotation');
+      $curActive.classList.remove('s--active', 's--active-prev');
+      document.querySelector('.myslide.s--prev').classList.remove('s--prev');
+
+      $newActive.classList.add('s--active');
+      if (!isRight) $newActive.classList.add('s--active-prev');
+
+
+      var prevIndex = index - 1;
+      if (prevIndex < 1) prevIndex = numOfSlides;
+
+      document.querySelector('.slide-' + prevIndex).classList.add('s--prev');
+
+      setTimeout(function () {
+        $control.classList.remove('a--rotation');
+        slidingBlocked = false;
+      }, slidingAT * 0.75);
+    };
+
     // fin slider
 
     console.log("final ---->>")
