@@ -15,7 +15,7 @@ $secondary: $mav_primary_s !default;
 $info-outline: #1f7e9a;
 $warning-outline: #a6670e;
 
-@import 'components/slider.scss';
+@import 'components/sliderjs.scss';
 
 #page-content {
   background-color: $bk;
