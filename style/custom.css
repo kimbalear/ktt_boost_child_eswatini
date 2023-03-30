@@ -453,7 +453,13 @@ h6 {
   margin-left: -30px;
   margin-top: 48px;
   max-width: 480px;
-  color: #919191;
+  color: #f8f8f8;
+}
+.myslider_content .slide__content h2 {
+  font-size: 3em;
+}
+.myslider_content .slide__content p {
+  font-size: 1rem;
 }
 .myslider_content .slide__heading {
   margin-bottom: 8px;

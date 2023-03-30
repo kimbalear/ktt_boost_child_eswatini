@@ -91,6 +91,13 @@ $THEME->layouts = [
         'defaultregion' => 'side-pre',
         'options' => array('nonavbar' => true),
     ),
+    // The site about page.
+    'about' => array(
+        'file' => 'about.php',
+        'regions' => array('side-pre'),
+        'defaultregion' => 'side-pre',
+        'options' => array('nonavbar' => true),
+    ),
     // Server administration scripts.
     'admin' => array(
         'file' => 'drawers.php',
