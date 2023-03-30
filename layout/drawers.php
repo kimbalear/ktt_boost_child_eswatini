@@ -105,7 +105,7 @@ $templatecontext = [
     'overflow' => $overflow,
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
-    'myname' => 'Joaquin Urbano Serra'
+    'imagegirlpower' => $OUTPUT->image_url('eswatini/girlPower', 'theme')
 ];
 
 echo $OUTPUT->render_from_template('theme_boost/drawers', $templatecontext);

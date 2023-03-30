@@ -1,6 +1,8 @@
 require(['jquery'], function ($) {
   $(document).ready(function () {
 
+    $('#page-header').remove()
+
     $(window).scroll(function () {
       if ($(this).scrollTop() > 200) {
         $('#scroll').fadeIn();

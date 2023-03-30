@@ -1,3 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1em;
+}
+body a {
+  /* color: red;  */
+}
+body a:hover {
+  color: #000000;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h4 {
+  display: block;
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h6 {
+  display: block;
+  font-size: 0.67em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+#page-content {
+  background-color: #FFF;
+}
+
+.section .activity .activityinstance {
+  min-width: 10%;
+}
+
+#page.drawers {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.wrapper_home {
+  width: 100%;
+  max-width: 814px;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+.wrapper_home .sec1,
+.wrapper_home .sec2 {
+  min-height: 300px;
+}
+.wrapper_home .sec1 {
+  background-color: #99f;
+}
+.wrapper_home .sec2 {
+  background-color: #f99;
+}
+
+.frontpage-course-list-enrolled .coursebox {
+  float: left;
+  width: calc(50% - 4px);
+}
+.frontpage-course-list-enrolled .first {
+  margin-right: 4px;
+}
+.frontpage-course-list-enrolled .last {
+  margin-left: 4px;
+}
+.frontpage-course-list-enrolled .content .d-flex .flex-grow-1 .summary .no-overflow p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 200px;
+}
+
+.myFooter {
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  background-color: rgba(247, 247, 247, 0.4666666667);
+}
+.myFooter .myFooter_wrp {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 1fr auto;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  max-width: 814px;
+  margin: 0 auto;
+  grid-template-areas: "footer_logo footer_menu1 footer_menu2" "footer_cr footer_cr footer_cr";
+}
+.myFooter .myFooter_wrp .footer_logo {
+  justify-self: center;
+  align-self: start;
+  grid-area: footer_logo;
+}
+.myFooter .myFooter_wrp .footer_logo .logo {
+  margin-top: 1em;
+  width: 100%;
+  height: auto;
+}
+.myFooter .myFooter_wrp .footer_menu1 {
+  grid-area: footer_menu1;
+  color: #000000;
+}
+.myFooter .myFooter_wrp .footer_menu2 {
+  grid-area: footer_menu2;
+  color: #000000;
+}
+.myFooter .myFooter_wrp .footer_menu1 h3,
+.myFooter .myFooter_wrp .footer_menu2 h3 {
+  margin-bottom: 12px;
+  font-size: 1em;
+  font-weight: 500;
+}
+.myFooter .myFooter_wrp .footer_menu1 ul,
+.myFooter .myFooter_wrp .footer_menu2 ul {
+  padding-left: 0;
+  list-style: none;
+}
+.myFooter .myFooter_wrp .footer_menu1 ul li,
+.myFooter .myFooter_wrp .footer_menu2 ul li {
+  line-height: 32px;
+}
+.myFooter .myFooter_wrp .footer_menu1 ul li a,
+.myFooter .myFooter_wrp .footer_menu2 ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+.myFooter .myFooter_wrp .footer_menu1 ul li a:hover,
+.myFooter .myFooter_wrp .footer_menu2 ul li a:hover {
+  color: #0f6cbf;
+}
+.myFooter .myFooter_wrp .footer_cr {
+  align-self: center;
+  grid-area: footer_cr;
+  border-top: 1px solid #d8d8d8;
+}
+.myFooter .myFooter_wrp .footer_cr p {
+  text-align: center;
+  color: #000000;
+  font-size: medium;
+  line-height: 2.5em;
+  padding: 0;
+  margin: 0;
+  color: #686868;
+}
+
+.popover-body {
+  background: rgba(247, 247, 247, 0.4666666667);
+}
+
 .myslider_content {
   width: 100%;
   height: 100%;
@@ -108,42 +304,52 @@
   -webkit-clip-path: circle(30px at 120vw 50%);
   clip-path: circle(30px at 120vw 50%);
   /*
-  		&:nth-child(1) {
-  			.slide__inner {
-  				background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg");
-  			}
-  		}
+  &:nth-child(1) {
+  	.slide__inner {
+  		background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-2.jpg");
+  	}
+  }
 
-  		&:nth-child(2) {
-  			.slide__inner {
-  				background-image: url("ktt_boost_child/pix/imgs/img1.jpg");
-  			}
-  		}
+  &:nth-child(2) {
+  	.slide__inner {
+  		background-image: url("ktt_boost_child/pix/imgs/img1.jpg");
+  	}
+  }
 
-  		&:nth-child(3) {
-  			.slide__inner {
-  				background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-4.jpg");
-  			}
-  		}
+  &:nth-child(3) {
+  	.slide__inner {
+  		background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-4.jpg");
+  	}
+  }
 
-  		&:nth-child(4) {
-  			.slide__inner {
-  				background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-5.jpg");
-  			}
-  		}
+  &:nth-child(4) {
+  	.slide__inner {
+  		background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-5.jpg");
+  	}
+  }
 
-  		&:nth-child(5) {
-  			.slide__inner {
-  				background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-6.jpg");
-  			}
-  		}
-  		*/
+  &:nth-child(5) {
+  	.slide__inner {
+  		background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-6.jpg");
+  	}
+  }
+  */
 }
-.myslider_content .myslide .background-image {
-  background-image: url("ruta/de/la/imagen.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit: contain;
+.myslider_content .myslide .slide__inner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.myslider_content .myslide .slide__inner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   object-position: center;
 }
 .myslider_content .myslide.s--prev {
@@ -185,114 +391,21 @@
 .myslider_content .slide__content {
   position: absolute;
   left: 5%;
-  top: 50%;
+  top: 60vh;
   margin-left: -30px;
   margin-top: 48px;
   max-width: 480px;
-  color: #fff;
+  color: #919191;
 }
 .myslider_content .slide__heading {
-  margin-bottom: 20px;
-  font-size: 60px;
+  margin-bottom: 8px;
+  font-size: 2em;
 }
 .myslider_content .slide__text {
-  font-size: 25px;
+  font-size: 1.5em;
 }
 .myslider_content .slide__text a {
   color: inherit;
-}
-
-#page-content {
-  background-color: #FFF;
-}
-
-.section .activity .activityinstance {
-  min-width: 10%;
-}
-
-#page.drawers {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-}
-
-.wrapper_home {
-  width: 100%;
-  max-width: 814px;
-  padding: 0 8px;
-  margin: 0 auto;
-}
-.wrapper_home .sec1,
-.wrapper_home .sec2 {
-  min-height: 300px;
-}
-.wrapper_home .sec1 {
-  background-color: #99f;
-}
-.wrapper_home .sec2 {
-  background-color: #f99;
-}
-
-.frontpage-course-list-enrolled .coursebox {
-  float: left;
-  width: calc(50% - 4px);
-}
-.frontpage-course-list-enrolled .first {
-  margin-right: 4px;
-}
-.frontpage-course-list-enrolled .last {
-  margin-left: 4px;
-}
-.frontpage-course-list-enrolled .content .d-flex .flex-grow-1 .summary .no-overflow p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 200px;
-}
-
-h2 {
-  margin: 50px 0 25px;
-}
-
-.myFooter {
-  width: 100%;
-  height: auto;
-  padding: 8px;
-  background-color: #333;
-}
-.myFooter .myFooter_wrp {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr auto;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  max-width: 814px;
-  margin: 0 auto;
-  grid-template-areas: "footer_logo footer_menu1 footer_menu2" "footer_cr footer_cr footer_cr";
-}
-.myFooter .myFooter_wrp .footer_logo {
-  justify-self: center;
-  align-self: start;
-  grid-area: footer_logo;
-}
-.myFooter .myFooter_wrp .footer_logo .logo {
-  width: 100%;
-  height: auto;
-}
-.myFooter .myFooter_wrp .footer_menu1 {
-  grid-area: footer_menu1;
-  color: #E8E4D6;
-}
-.myFooter .myFooter_wrp .footer_menu2 {
-  grid-area: footer_menu2;
-  color: #E8E4D6;
-}
-.myFooter .myFooter_wrp .footer_cr {
-  align-self: center;
-  grid-area: footer_cr;
-}
-.myFooter .myFooter_wrp .footer_cr p {
-  text-align: center;
-  color: #E8E4D6;
 }
 
 /*# sourceMappingURL=custom.css.map */

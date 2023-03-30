@@ -66,4 +66,4 @@ ls -l /bitnami/moodle/theme/ktt_boost_child/
 docker exec joaqu-moodle-1 rm -r /bitnami/moodle/theme/ktt_boost_child
 
 ## Testing
-http://172.21.64.1/theme/ktt_boost_child/test.php
+http://localhost/theme/ktt_boost_child/test.php
