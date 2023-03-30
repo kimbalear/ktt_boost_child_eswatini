@@ -37,18 +37,11 @@
 <div id="page-wrapper">
 
     {{{ output.standard_top_of_body_html }}}
-    
-    <div id="page" class="container-fluid pt-5 mt-0">
-        <div id="page-content" class="row">
-            <div id="region-main-box" class="col-12">
-                <section id="region-main" class="col-12 h-100" aria-label="{{#str}}content{{/str}}">
-                <div class="login-wrapper">
-                    <div class="login-container">
-                    {{{ output.main_content }}}
-                    </div>
-                </div>
-                </section>
-            </div>
+
+    <div class="ktt_log_page">
+    <img src="{{{imagbk}}}" class="imgbk">
+        <div class="lg_cnt">
+            {{{ output.main_content }}}
         </div>
     </div>
     {{> theme_boost/footer }}

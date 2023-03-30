@@ -33,7 +33,8 @@ body {
 }
 
 @import 'base/typography.scss';
-@import 'layouts/frontpage.scss';
+@import 'layouts/frontpage.scss',
+'layouts/login.scss';
 
 @import 'components/footer.scss',
 'components/sliderjs.scss';
