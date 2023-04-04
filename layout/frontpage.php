@@ -114,4 +114,11 @@ $templatecontext = [
     'myname' => 'Joaquin Urbano'
 ];
 
-echo $OUTPUT->render_from_template('theme_ktt_boost_child/frontpage', $templatecontext);
+$link_about = __DIR__ . '/theme/ktt_boost_child/about.php';
+
+$data = [
+    'link_about' => $link_about,
+    // Otros datos necesarios para la plantilla
+];
+
+echo $OUTPUT->render_from_template('theme_ktt_boost_child/frontpage', $templatecontext, $data);

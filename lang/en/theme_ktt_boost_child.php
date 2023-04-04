@@ -36,3 +36,19 @@ $string['rawscss_desc'] = 'Use this field to provide SCSS or CSS code which will
 $string['rawscsspre'] = 'Raw initial SCSS';
 // Raw initial SCSS setting help text.
 $string['rawscsspre_desc'] = 'In this field you can provide initialising SCSS code, it will be injected before everything else. Most of the time you will use this setting to define variables.';
+
+//custom page
+$string['contact_title'] = 'Título de la contact';
+$string['contact_heading'] = 'Encabezado de la contact';
+
+$string['about_title'] = 'Título de la about';
+$string['about_heading'] = 'Encabezado de la about';
+
+$string['privacy_title'] = 'Título de la privacy';
+$string['privacy_heading'] = 'Encabezado de la privacy';
+
+$string['terms_title'] = 'Título de la terms';
+$string['terms_heading'] = 'Encabezado de la terms';
+
+$string['service_title'] = 'Título de la service';
+$string['service_heading'] = 'Encabezado de la service';

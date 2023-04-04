@@ -35,3 +35,14 @@ function theme_ktt_boost_child_get_main_scss_content($theme) {
     // Combine them together.
     return $pre . "\n" . $scss . "\n" . $post;
 }
+
+function ktt_boost_child_extend_navigation(global_navigation $navigation) {
+    $url_contact = new moodle_url('/theme/ktt_boost_child/pages/contact.php');
+    $url_about = new moodle_url('/theme/ktt_boost_child/pages/about.php');
+    
+    $node_contact = navigation_node::create('Página contact', $url_contact, navigation_node::NODETYPE_LEAF, null, 'contact');
+    $node_about = navigation_node::create('Página about', $url_about, navigation_node::NODETYPE_LEAF, null, 'about');
+    
+    $navigation->add_node($node_contact);
+    $navigation->add_node($node_about);
+}
