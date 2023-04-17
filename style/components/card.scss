@@ -1,7 +1,7 @@
 .panel_grid {
-    //max-width: 100vw;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 25%));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 30.8%));
     grid-gap: 8px;
     margin: 0 auto;
     padding: 0;
@@ -35,7 +35,7 @@
                 align-items: start;
 
                 .content {
-                    font-size: 1em;
+                    font-size: clamp(0.7em, 3vw, 1em); // establece un tamaño mínimo de 16px, un tamaño de fuente proporcional al ancho del contenedor y un máximo de 24px
                     font-weight: 200;
                 }
 

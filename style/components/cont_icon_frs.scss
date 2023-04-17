@@ -1,7 +1,7 @@
 .cont_icon_frs {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 100px auto;
     gap: 20px 0px;
     grid-auto-flow: row;
     padding: 50px 0;
@@ -13,6 +13,7 @@
         justify-self: center;
         align-self: center;
         grid-area: icon;
+        background-color: red;
 
         img {
             width: 72px;

@@ -473,8 +473,9 @@ h6 {
 }
 
 .panel_grid {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 25%));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 30.8%));
   grid-gap: 8px;
   margin: 0 auto;
   padding: 0;
@@ -505,7 +506,7 @@ h6 {
   align-items: start;
 }
 .panel_grid .card .face.face1 .content {
-  font-size: 1em;
+  font-size: clamp(0.7em, 3vw, 1em);
   font-weight: 200;
 }
 .panel_grid .card .face.face2 {
@@ -543,7 +544,6 @@ h6 {
   width: 100%;
   height: 45vh;
   overflow: hidden;
-  background-color: #fcf956;
 }
 .con_img img {
   position: absolute;
@@ -570,18 +570,19 @@ h6 {
 .cont_icon_frs {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: 100px auto;
   gap: 20px 0px;
   grid-auto-flow: row;
   padding: 50px 0;
   grid-template-areas: "icon" "frs";
 }
-.cont_icon_frs .icon {
+.cont_icon_frs .icon_frs {
   justify-self: center;
   align-self: center;
   grid-area: icon;
+  background-color: red;
 }
-.cont_icon_frs .icon img {
+.cont_icon_frs .icon_frs img {
   width: 72px;
   height: 72px;
 }

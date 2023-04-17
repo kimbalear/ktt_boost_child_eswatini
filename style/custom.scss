@@ -32,7 +32,9 @@ body {
   }
 }
 
-@import 'base/typography.scss';
+@import 'abstract/mixins',
+'abstract/typography.scss';
+
 @import 'layouts/frontpage.scss',
 'layouts/login.scss';
 
