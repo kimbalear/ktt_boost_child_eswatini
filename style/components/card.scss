@@ -35,7 +35,7 @@
                 align-items: start;
 
                 .content {
-                    font-size: clamp(0.7em, 3vw, 1em); // establece un tamaño mínimo de 16px, un tamaño de fuente proporcional al ancho del contenedor y un máximo de 24px
+                    font-size: clamp(0.7em, 3vw, 1em);
                     font-weight: 200;
                 }
 

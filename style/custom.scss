@@ -19,6 +19,18 @@ $secondary: $mav_primary_s !important;
 $info-outline: #1f7e9a;
 $warning-outline: #a6670e;
 
+@import 'abstract/mixins',
+'abstract/typography.scss';
+
+@import 'layouts/frontpage.scss',
+'layouts/login.scss';
+
+@import 'components/footer.scss',
+'components/sliderjs.scss',
+'components/card.scss',
+'components/con_img.scss',
+'components/cont_icon_frs.scss';
+
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 1em;
@@ -32,14 +44,11 @@ body {
   }
 }
 
-@import 'abstract/mixins',
-'abstract/typography.scss';
+.main-inner {
+  max-width: 100% !important;
+}
 
-@import 'layouts/frontpage.scss',
-'layouts/login.scss';
-
-@import 'components/footer.scss',
-'components/sliderjs.scss',
-'components/card.scss',
-'components/con_img.scss',
-'components/cont_icon_frs.scss';
+.ktt_wrapper {
+  max-width: 788px;
+  margin: 0 auto;
+}

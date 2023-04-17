@@ -106,12 +106,11 @@ $templatecontext = [
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
     'imagegirlpower' => $OUTPUT->image_url('eswatini/girlPower', 'theme_ktt_boost_child'),
-    'imageone' => $OUTPUT->image_url('imgs/img14', 'theme_ktt_boost_child'),
-    'imagetwo' => $OUTPUT->image_url('imgs/img13', 'theme_ktt_boost_child'),
-    'imagethree' => $OUTPUT->image_url('imgs/img2', 'theme_ktt_boost_child'),
-    'imagefour' => $OUTPUT->image_url('imgs/img6', 'theme_ktt_boost_child'),
-    'imagefive' => $OUTPUT->image_url('imgs/img4', 'theme_ktt_boost_child'),
-    'myname' => 'Joaquin Urbano'
+    'imageone' => $OUTPUT->image_url('imgs/sldr1', 'theme_ktt_boost_child'),
+    'imagetwo' => $OUTPUT->image_url('imgs/sldr2', 'theme_ktt_boost_child'),
+    'imagethree' => $OUTPUT->image_url('imgs/sldr3', 'theme_ktt_boost_child'),
+    'imagefour' => $OUTPUT->image_url('imgs/sldr4', 'theme_ktt_boost_child'),
+    'imagefive' => $OUTPUT->image_url('imgs/sldr5', 'theme_ktt_boost_child')
 ];
 
 $link_about = __DIR__ . '/theme/ktt_boost_child/about.php';
