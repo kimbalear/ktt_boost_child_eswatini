@@ -472,4 +472,127 @@ h6 {
   color: inherit;
 }
 
+.panel_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 25%));
+  grid-gap: 8px;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+}
+.panel_grid .card {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  margin: 0 auto;
+  background: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.panel_grid .card .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel_grid .card .face.face1 {
+  box-sizing: border-box;
+  padding: 8px;
+  background-color: #FFF;
+  align-items: start;
+}
+.panel_grid .card .face.face1 .content {
+  font-size: 1em;
+  font-weight: 200;
+}
+.panel_grid .card .face.face2 {
+  transition: 0.5s;
+  background-color: #F26A5E;
+}
+.panel_grid .card .face.face2 h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  color: #fff;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  text-align: center;
+}
+.panel_grid .card .face:hover {
+  cursor: pointer;
+}
+.panel_grid .card:nth-child(odd) .face.face2 {
+  background-color: #F26A5E;
+}
+.panel_grid .card:nth-child(even) .face.face2 {
+  background-color: #333;
+}
+.panel_grid .card:hover .face.face2 {
+  height: 60px;
+}
+.panel_grid .card:hover .face.face2 h3 {
+  font-size: 1em;
+}
+
+.con_img {
+  position: relative;
+  width: 100%;
+  height: 45vh;
+  overflow: hidden;
+  background-color: #fcf956;
+}
+.con_img img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.con_img .img_tt {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background-color: rgba(51, 51, 51, 0.3490196078);
+  text-shadow: rgba(51, 51, 51, 0.1764705882);
+  bottom: 0;
+  padding: 8px 16px 16px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.cont_icon_frs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px 0px;
+  grid-auto-flow: row;
+  padding: 50px 0;
+  grid-template-areas: "icon" "frs";
+}
+.cont_icon_frs .icon {
+  justify-self: center;
+  align-self: center;
+  grid-area: icon;
+}
+.cont_icon_frs .icon img {
+  width: 72px;
+  height: 72px;
+}
+.cont_icon_frs .frs {
+  justify-self: center;
+  align-self: stretch;
+  grid-area: frs;
+}
+.cont_icon_frs .frs h1, .cont_icon_frs .frs h2, .cont_icon_frs .frs h3, .cont_icon_frs .frs h4, .cont_icon_frs .frs h5, .cont_icon_frs .frs h6, .cont_icon_frs .frs p {
+  max-width: 780px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=custom.css.map */
