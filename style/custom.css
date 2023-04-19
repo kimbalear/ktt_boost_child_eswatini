@@ -567,7 +567,6 @@ h6 {
   justify-self: center;
   align-self: center;
   grid-area: icon;
-  background-color: red;
 }
 .cont_icon_frs .icon_frs img {
   width: 72px;
@@ -581,6 +580,43 @@ h6 {
 .cont_icon_frs .frs h1, .cont_icon_frs .frs h2, .cont_icon_frs .frs h3, .cont_icon_frs .frs h4, .cont_icon_frs .frs h5, .cont_icon_frs .frs h6, .cont_icon_frs .frs p {
   max-width: 780px;
   text-align: center;
+}
+
+.panel_smpl_cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 30.8%));
+  grid-gap: 22px;
+  margin: 50px auto;
+  padding: 0;
+  justify-content: center;
+}
+.panel_smpl_cards .smpl_card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  grid-template-areas: "cont_icon" "cont_descr";
+}
+.panel_smpl_cards .smpl_card .cont_icon {
+  justify-self: center;
+  align-self: center;
+  grid-area: cont_icon;
+}
+.panel_smpl_cards .smpl_card .cont_icon img {
+  width: 100px;
+  height: 100px;
+}
+.panel_smpl_cards .smpl_card .cont_descr {
+  justify-self: center;
+  align-self: center;
+  grid-area: cont_descr;
+}
+.panel_smpl_cards .smpl_card .cont_descr p {
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.9em;
 }
 
 body {
