@@ -6,6 +6,15 @@
     align-items: center;
     height: 100%;
 
+    @include brk575 {
+        margin: 0;
+        position: relative;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        height: 100%;
+    }
+
     .imgbk {
         position: absolute;
         top: 0;
@@ -15,6 +24,14 @@
         object-fit: cover; // Ajusta la imagen para cubrir el contenedor sin deformarse
         object-position: center; // Centra la imagen en el contenedor
         transform: scaleX(-1);
+
+        @include brk575 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+        }
     }
 
     .lg_cnt {
@@ -28,13 +45,28 @@
         display: flex;
         align-items: center;
 
+        @include brk575 {
+            position: relative;
+            width: 100%;
+            max-width: 390px;
+            margin: 0 auto;
+            height: auto;
+            border-left: none;
+        }
+
         div[role="main"] {
+
+            @include brk575 {
+                width: 100%;
+                height: auto;
+            }
+
             .loginform {
                 .login-logo {
                     display: flex;
 
                     #logoimage {
-                        margin: 0 auto !important;
+                        margin: 20px auto !important;
                     }
                 }
 
@@ -69,10 +101,7 @@
     }
 }
 
-/*
-.pagelayout-login {
-    #page {
-        background-color: #FFF;
-    }
+.login-instructions,
+.login-signup {
+    visibility: hidden;
 }
-*/
