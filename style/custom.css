@@ -109,23 +109,42 @@ h6 {
   height: auto;
 }
 
-.frontpage-course-list-enrolled .coursebox {
-  float: left;
-  width: calc(50% - 4px);
-}
-.frontpage-course-list-enrolled .first {
-  margin-right: 4px;
-}
-.frontpage-course-list-enrolled .last {
-  margin-left: 4px;
-}
-.frontpage-course-list-enrolled .content .d-flex .flex-grow-1 .summary .no-overflow p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 200px;
-}
+/*
+.frontpage-course-list-enrolled {
+    .coursebox {
+        float: left;
+        width: calc(50% - 4px);
+    }
 
+    .first {
+        margin-right: 4px;
+    }
+
+    .last {
+        margin-left: 4px;
+    }
+
+    .content {
+        .d-flex {
+            .courseimage { }
+
+            .flex-grow-1 {
+                .summary {
+                    .no-overflow {
+                        p {
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            width: 200px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+*/
 .ktt_log_page {
   margin: 0;
   position: relative;
