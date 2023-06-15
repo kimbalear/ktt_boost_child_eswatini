@@ -1,6 +1,6 @@
 # moodle-theme_ktt_boost_child
 
-https://eswatini.moodle.solidlines.io/
+https://eswatini.kassai.org/
 
 ## Moodle docs
 
