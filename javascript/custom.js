@@ -1,9 +1,9 @@
 require(['jquery'], function ($) {
   $(document).ready(function () {
 
-    $('li[data-key="myhome"]').hide();
-    $('li[data-key="mycourses"]').hide();
-    $('li[data-key="siteadminnode"]').hide();
+    //$('li[data-key="myhome"]').hide();
+    //$('li[data-key="mycourses"]').hide();
+    //$('li[data-key="siteadminnode"]').hide();
 
     $('#page-header').remove()
 
