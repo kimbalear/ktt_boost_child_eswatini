@@ -67,3 +67,6 @@ docker exec joaqu-moodle-1 rm -r /bitnami/moodle/theme/ktt_boost_child
 
 ## Testing
 http://localhost/theme/ktt_boost_child/test.php
+
+
+scp -i D:\mykey\mykey -r D:\moodle_plugins\ktt_boost_child jurbano@54.72.45.23:/tmp
