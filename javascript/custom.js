@@ -74,10 +74,18 @@ require(['jquery'], function ($) {
 
   function showRandomImage(className) {
     var images = $('.' + className);
-    images.hide();
-    var randomIndex = Math.floor(Math.random() * images.length);
-    console.log(images.length);
-    images.eq(randomIndex).show();
+
+    // Comprobar el ancho de la ventana
+    if (window.innerWidth <= 711) {
+      // Si el ancho de la ventana es menor o igual a 711px
+      images.hide();
+      var randomIndex = Math.floor(Math.random() * images.length);
+      console.log(images.length);
+      images.eq(randomIndex).show();
+    } else {
+      // Si el ancho de la ventana es mayor a 711px
+      images.hide();
+    }
   }
 
   // Definir el intervalo (por ejemplo, 3 segundos)
@@ -90,5 +98,6 @@ require(['jquery'], function ($) {
     showRandomImage('sl3');
     showRandomImage('sl5');
   }, intervalo);
+
 
 });
