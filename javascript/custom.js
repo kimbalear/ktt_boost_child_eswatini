@@ -71,4 +71,24 @@ require(['jquery'], function ($) {
 
     // fin slider
   });
+
+  function showRandomImage(className) {
+    var images = $('.' + className);
+    images.hide();
+    var randomIndex = Math.floor(Math.random() * images.length);
+    console.log(images.length);
+    images.eq(randomIndex).show();
+  }
+
+  // Definir el intervalo (por ejemplo, 3 segundos)
+  var intervalo = 3000; // 3000 milisegundos = 3 segundos
+
+  // Iniciar el intervalo
+  setInterval(function () {
+    showRandomImage('sl1');
+    showRandomImage('sl2');
+    showRandomImage('sl3');
+    showRandomImage('sl5');
+  }, intervalo);
+
 });

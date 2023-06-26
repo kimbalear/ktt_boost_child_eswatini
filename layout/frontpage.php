@@ -110,11 +110,22 @@ $templatecontext = [
     'imageeswatini' => $OUTPUT->image_url('eswatini/eswatini', 'theme_ktt_boost_child'),
     'imagegmaveric' => $OUTPUT->image_url('eswatini/Maverick', 'theme_ktt_boost_child'),
     'imagepsi' => $OUTPUT->image_url('eswatini/psi-eswatini', 'theme_ktt_boost_child'),
-    'imageone' => $OUTPUT->image_url('imgs/sldr1', 'theme_ktt_boost_child'),
-    'imagetwo' => $OUTPUT->image_url('imgs/sldr2', 'theme_ktt_boost_child'),
-    'imagethree' => $OUTPUT->image_url('imgs/sldr3', 'theme_ktt_boost_child'),
-    'imagefour' => $OUTPUT->image_url('imgs/sldr4', 'theme_ktt_boost_child'),
-    'imagefive' => $OUTPUT->image_url('imgs/sldr5', 'theme_ktt_boost_child')
+    'sldr1' => $OUTPUT->image_url('resp/sldr1', 'theme_ktt_boost_child'),
+    'sldr1-portrait-1' => $OUTPUT->image_url('resp/sldr1-portrait-1', 'theme_ktt_boost_child'),
+    'sldr1-portrait-2' => $OUTPUT->image_url('resp/sldr1-portrait-2', 'theme_ktt_boost_child'),
+    'sldr2' => $OUTPUT->image_url('resp/sldr2', 'theme_ktt_boost_child'),
+    'sldr2-portrait-1' => $OUTPUT->image_url('resp/sldr2-portrait-1', 'theme_ktt_boost_child'),
+    'sldr2-portrait-2' => $OUTPUT->image_url('resp/sldr2-portrait-2', 'theme_ktt_boost_child'),
+    'sldr3' => $OUTPUT->image_url('resp/sldr3', 'theme_ktt_boost_child'),
+    'sldr3-portrait-1' => $OUTPUT->image_url('resp/sldr3-portrait-1', 'theme_ktt_boost_child'),
+    'sldr3-portrait-2' => $OUTPUT->image_url('resp/sldr3-portrait-2', 'theme_ktt_boost_child'),
+    'sldr3-portrait-3' => $OUTPUT->image_url('resp/sldr3-portrait-3', 'theme_ktt_boost_child'),
+    'sldr4' => $OUTPUT->image_url('resp/sldr4', 'theme_ktt_boost_child'),
+    'sldr4-portrait-1' => $OUTPUT->image_url('resp/sldr4-portrait-1', 'theme_ktt_boost_child'),
+
+    'sldr5' => $OUTPUT->image_url('resp/sldr5', 'theme_ktt_boost_child'),
+    'sldr5-portrait-1' => $OUTPUT->image_url('resp/sldr5-portrait-1', 'theme_ktt_boost_child'),
+    'sldr5-portrait-2' => $OUTPUT->image_url('resp/sldr5-portrait-2', 'theme_ktt_boost_child')
 ];
 
 $link_about = __DIR__ . '/theme/ktt_boost_child/about.php';
