@@ -37,7 +37,7 @@
 
 	.slider {
 		position: relative;
-		height: 100vh;
+		height: calc(100vh - 2%);
 	}
 
 	.slider__slides {
