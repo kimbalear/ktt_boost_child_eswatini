@@ -76,14 +76,13 @@ require(['jquery'], function ($) {
     var images = $('.' + className);
 
     // Comprobar el ancho de la ventana
-    if (window.innerWidth <= 711) {
+    if (window.innerWidth <= 713) {
       // Si el ancho de la ventana es menor o igual a 711px
       images.hide();
       var randomIndex = Math.floor(Math.random() * images.length);
       console.log(images.length);
       images.eq(randomIndex).show();
     } else {
-      // Si el ancho de la ventana es mayor a 711px
       images.hide();
     }
   }
