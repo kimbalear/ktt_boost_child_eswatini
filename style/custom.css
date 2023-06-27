@@ -545,12 +545,13 @@ h6 {
 }
 .myslider_content .slide__content {
   position: absolute;
-  left: 5%;
-  top: 60vh;
-  margin-left: -30px;
-  margin-top: 48px;
-  max-width: 480px;
-  color: #f8f8f8;
+  /* Posicionamiento absoluto para el contenido del slide */
+  bottom: 0;
+  /* Fijar el contenido en la parte inferior del contenedor */
+  width: 100%;
+  /* Asegurarse de que el contenido ocupa todo el ancho del contenedor */
+  padding: 8px 16px 100px 16px;
+  background-color: rgba(255, 255, 255, 0.6588235294);
 }
 .myslider_content .slide__content .slide__heading {
   margin-bottom: 8px;
