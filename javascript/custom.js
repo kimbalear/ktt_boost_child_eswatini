@@ -1,6 +1,8 @@
 require(['jquery'], function ($) {
   $(document).ready(function () {
 
+    $('#login').remove();
+
     //$('li[data-key="myhome"]').hide();
     //$('li[data-key="mycourses"]').hide();
     //$('li[data-key="siteadminnode"]').hide();
