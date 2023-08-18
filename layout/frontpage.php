@@ -122,7 +122,6 @@ $templatecontext = [
     'sldr3-portrait-3' => $OUTPUT->image_url('resp/sldr3-portrait-3', 'theme_ktt_boost_child'),
     'sldr4' => $OUTPUT->image_url('resp/sldr4', 'theme_ktt_boost_child'),
     'sldr4-portrait-1' => $OUTPUT->image_url('resp/sldr4-portrait-1', 'theme_ktt_boost_child'),
-
     'sldr5' => $OUTPUT->image_url('resp/sldr5', 'theme_ktt_boost_child'),
     'sldr5-portrait-1' => $OUTPUT->image_url('resp/sldr5-portrait-1', 'theme_ktt_boost_child'),
     'sldr5-portrait-2' => $OUTPUT->image_url('resp/sldr5-portrait-2', 'theme_ktt_boost_child')
