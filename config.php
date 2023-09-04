@@ -53,7 +53,9 @@ $THEME->hidefromselector = false;
 $THEME->scss = function($theme) {
     return theme_ktt_boost_child_get_main_scss_content($theme);
 };
-
+//version 4.2
+$THEME->haseditswitch = true;
+//---------------------------
 $THEME->layouts = [
     // Most backwards compatible layout without the blocks.
     'base' => array(

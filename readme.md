@@ -1,6 +1,6 @@
 # moodle-theme_ktt_boost_child
 
-https://eswatini.kassai.org/
+http://localhost:8080/
 
 ## Moodle docs
 
@@ -51,20 +51,29 @@ docker run -d --name moodle \
 https://hub.docker.com/r/bitnami/moodle
 
 docker ps
-docker exec -it joaqu-moodle-1 bash
+docker exec -it moodle_dev-moodle-1 bash
 cd /bitnami/moodle
 ls
 
 docker ps
-docker cp D:\01NSP\repositories\ddMood\ktt_boost_child joaqu-moodle-1:/bitnami/moodle/theme/ktt_boost_child
+docker cp D:\a23\GitHubRepo\ktt_boost_child moodle_dev-moodle-1:/bitnami/moodle/theme/ktt_boost_child
 
-docker exec -it joaqu-moodle-1 bash
+docker exec -it moodle_dev-moodle-1 bash
 ls -l /bitnami/moodle/theme/ktt_boost_child/
 
 ### del directory
 
-docker exec joaqu-moodle-1 rm -r /bitnami/moodle/theme/ktt_boost_child
+docker exec moodle_dev-moodle-1 rm -r /bitnami/moodle/theme/ktt_boost_child
 
 ## Testing
 http://localhost/theme/ktt_boost_child/test.php
 
+# dependencias 
+* static page
+
+
+Exception - htmlspecialchars(): Argument #1 ($string) must be of type string, array given
+Coding error detected, it must be fixed by a programmer: page layout file [dirroot]/theme/ktt_boost_child/layout/frontpage.php does not contain the main content placeholder, please include "<?php echo $OUTPUT->main_content() ?>" in theme layout file.
+
+Excepción: htmlspecialchars(): el argumento n.º 1 ($cadena) debe ser de tipo cadena, se proporciona una matriz
+Error de codificación detectado, debe ser solucionado por un programador: el archivo de diseño de página [dirroot]/theme/ktt_boost_child/layout/frontpage.php no contiene el marcador de posición del contenido principal, incluya "<?php echo $OUTPUT->main_content() ?>" en el archivo de diseño del tema.
