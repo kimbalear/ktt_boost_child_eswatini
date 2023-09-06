@@ -71,9 +71,5 @@ http://localhost/theme/ktt_boost_child/test.php
 # dependencias 
 * static page
 
-
-Exception - htmlspecialchars(): Argument #1 ($string) must be of type string, array given
-Coding error detected, it must be fixed by a programmer: page layout file [dirroot]/theme/ktt_boost_child/layout/frontpage.php does not contain the main content placeholder, please include "<?php echo $OUTPUT->main_content() ?>" in theme layout file.
-
-Excepción: htmlspecialchars(): el argumento n.º 1 ($cadena) debe ser de tipo cadena, se proporciona una matriz
-Error de codificación detectado, debe ser solucionado por un programador: el archivo de diseño de página [dirroot]/theme/ktt_boost_child/layout/frontpage.php no contiene el marcador de posición del contenido principal, incluya "<?php echo $OUTPUT->main_content() ?>" en el archivo de diseño del tema.
+TOKEN
+786b2d70191e8e690e6c3b4ac7045a45
