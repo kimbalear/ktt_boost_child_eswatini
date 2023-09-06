@@ -1,0 +1,16 @@
+.owl-carousel {
+  display: flex!important;
+  max-height: 300px!important;
+  .item {
+    display: flex!important; /* Utilizamos flexbox para centrar */
+    justify-content: center!important; /* Centramos horizontalmente */
+    //align-items: center; /* Centramos verticalmente */
+    min-height: 200px!important; /* Puedes ajustar la altura según tus necesidades */
+
+    .cont_course {
+      width: 100%!important;
+      height: 100%!important;
+      background-color: rgb(233, 211, 211)!important;
+    }
+  }
+}

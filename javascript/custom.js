@@ -1,6 +1,5 @@
 require(["jquery"], function ($) {
   $(document).ready(function () {
-    // Reemplaza 'YOUR_USER_TOKEN' con el token del usuario
     var userToken = "786b2d70191e8e690e6c3b4ac7045a45";
 
     // URL para la API REST de Moodle
@@ -101,31 +100,7 @@ require(["jquery"], function ($) {
             console.log("Error al obtener información de los cursos:", error);
           },
         });
-        /*
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          margin: 20,
-          autoplay: true,
-          autoplayTimeout: 2500,
-          stagePadding: 50,
-          nav: false,
-          dots: false,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 3,
-            },
-            960: {
-              items: 5,
-            },
-            1200: {
-              items: 6,
-            },
-          },
-        }); // Your code here
-*/
+
       })
       .catch(function () {
         console.log("Algo salió mal al cargar los scripts");
