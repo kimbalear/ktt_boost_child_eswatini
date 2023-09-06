@@ -67,19 +67,19 @@ div[role="main"] {
 }
 
 .owl-carousel {
-  background-color: aqua;
-  display: flex;
-  max-height: 300px;
+  background-color: aqua!important;
+  display: flex!important;
+  max-height: 300px!important;
   .item {
-    display: flex; /* Utilizamos flexbox para centrar */
-    justify-content: center; /* Centramos horizontalmente */
+    display: flex!important; /* Utilizamos flexbox para centrar */
+    justify-content: center!important; /* Centramos horizontalmente */
     //align-items: center; /* Centramos verticalmente */
-    min-height: 200px; /* Puedes ajustar la altura según tus necesidades */
+    min-height: 200px!important; /* Puedes ajustar la altura según tus necesidades */
 
     .cont_course {
-      width: 100%;
-      height: 100%;
-      background-color: rgb(233, 211, 211);
+      width: 100%!important;
+      height: 100%!important;
+      background-color: rgb(233, 211, 211)!important;
     }
   }
 }
