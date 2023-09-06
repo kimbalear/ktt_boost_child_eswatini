@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@include '/style/components/owl_carousel_courses.scss';
+@import "components/owl_carousel_courses.scss";
 $bk: #fff;
 $mav_primary: #000000;
 $mav_primary_s: #f26a5e;
@@ -64,22 +64,4 @@ div[role="main"] {
   max-width: 788px !important;
   margin: 0 auto;
   padding: 0 16px 50px;
-}
-
-.owl-carousel {
-  background-color: aqua!important;
-  display: flex!important;
-  max-height: 300px!important;
-  .item {
-    display: flex!important; /* Utilizamos flexbox para centrar */
-    justify-content: center!important; /* Centramos horizontalmente */
-    //align-items: center; /* Centramos verticalmente */
-    min-height: 200px!important; /* Puedes ajustar la altura según tus necesidades */
-
-    .cont_course {
-      width: 100%!important;
-      height: 100%!important;
-      background-color: rgb(233, 211, 211)!important;
-    }
-  }
 }

@@ -63,21 +63,54 @@ require(["jquery"], function ($) {
           success: function (response) {
             var owl = $("#owl-carousel-courses");
             owl.empty(); // Vacía el contenedor antes de agregar nuevos elementos
-            response.forEach(function (course) {
+            // Descarta el primer elemento del array
+            var courses = response.slice(1);
+            courses.forEach(function (course) {
               owl.append(
-                console.log("course: " + course.fullname),
-                '<div class="item"><div class="cont_course">' +
+                console.log("id: " + course.id),
+                console.log("shortname: " + course.shortname),
+                console.log("categoryid: " + course.categoryid),
+                console.log("categorysortorder: " + course.categorysortorder),
+                console.log("fullname: " + course.fullname),
+                console.log("displayname: " + course.displayname),
+                console.log("idnumber: " + course.idnumber),
+                console.log("summary: " + course.summary),
+                console.log("summaryformat: " + course.summaryformat),
+                console.log("format: " + course.format),
+                console.log("showgrades: " + course.showgrades),
+                console.log("newsitems: " + course.newsitems),
+                console.log("startdate: " + course.startdate),
+                console.log("enddate: " + course.enddate),
+                console.log("numsections: " + course.numsections),
+                console.log("maxbytes: " + course.maxbytes),
+                console.log("showreports: " + course.showreports),
+                console.log("visible: " + course.visible),
+                console.log("hiddensection: " + course.hiddensection),
+                console.log("groupmode: " + course.groupmode),
+                console.log("groupmodeforce: " + course.groupmodeforce),
+                console.log("defaultgroupingid: " + course.defaultgroupingid),
+                console.log("timecreated: " + course.timecreated),
+                console.log("timemodified: " + course.timemodified),
+                console.log("enablecompletion: " + course.enablecompletion),
+                console.log("completionnotify: " + course.completionnotify),
+                console.log("forcetheme: " + course.forcetheme),
+                console.log(
+                  "courseformatoptions: " + course.courseformatoptions
+                ),
+                '<div class="item"><div class="item__card_course"><div class="img_course">image</div><div class="content_course"><div class="name_course">' +
                   course.fullname +
-                  "</div></div>"
+                  "</div>" +
+                  course.summary +
+                  '</div><div class="cta_course"></div></div></div>'
               );
             });
             // Inicializa Owl Carousel solo una vez, después de agregar todos los elementos
             owl.owlCarousel({
               loop: true,
               margin: 20,
-              autoplay: true,
+              autoplay: false,
               autoplayTimeout: 2500,
-              stagePadding: 50,
+              stagePadding: 8,
               nav: false,
               dots: false,
               responsive: {
@@ -85,13 +118,13 @@ require(["jquery"], function ($) {
                   items: 1,
                 },
                 600: {
-                  items: 3,
+                  items: 2,
                 },
                 960: {
-                  items: 5,
+                  items: 3,
                 },
                 1200: {
-                  items: 6,
+                  items: 3,
                 },
               },
             });
@@ -100,7 +133,6 @@ require(["jquery"], function ($) {
             console.log("Error al obtener información de los cursos:", error);
           },
         });
-
       })
       .catch(function () {
         console.log("Algo salió mal al cargar los scripts");
@@ -186,7 +218,6 @@ require(["jquery"], function ($) {
       // Si el ancho de la ventana es menor o igual a 711px
       images.hide();
       var randomIndex = Math.floor(Math.random() * images.length);
-      console.log(images.length);
       images.eq(randomIndex).show();
     } else {
       images.hide();

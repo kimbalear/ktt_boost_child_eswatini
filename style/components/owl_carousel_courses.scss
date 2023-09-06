@@ -1,16 +1,66 @@
-.owl-carousel {
-  display: flex!important;
-  max-height: 300px!important;
-  .item {
-    display: flex!important; /* Utilizamos flexbox para centrar */
-    justify-content: center!important; /* Centramos horizontalmente */
-    //align-items: center; /* Centramos verticalmente */
-    min-height: 200px!important; /* Puedes ajustar la altura según tus necesidades */
+.cstm_courses_component {
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+  margin-bottom: 0.5rem;
+  //border-radius: 0.5rem;
 
-    .cont_course {
-      width: 100%!important;
-      height: 100%!important;
-      background-color: rgb(233, 211, 211)!important;
+  .owl-carousel {
+    display: flex;
+    .item {
+      display: flex; /* Utilizamos flexbox para centrar */
+      justify-content_course: center; /* Centramos horizontalmente */
+      //align-items: center; /* Centramos verticalmente */
+
+      &__card_course {
+        border: 1px solid #dee2e6;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 50px;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "img_course"
+          "content_course"
+          "cta_course";
+
+        .img_course {
+          grid-area: img_course;
+          border-bottom: 1px solid #dee2e6;
+        }
+
+        .content_course {
+          grid-area: content_course;
+
+          .name_course {
+            width: 100%;
+            height: auto;
+            font-size: 1.1em;
+            font-weight: 500;
+            line-height: 1.25em;
+          }
+          hr {
+            visibility: hidden;
+          }
+
+          #Content {
+            .boxed {
+              #lipsum {
+                p {
+                  font-size: 0.8em;
+                  font-weight: 300;
+                  line-height: 1em;
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+
+        .cta_course {
+          grid-area: cta_course;
+          background-color: rgb(169, 169, 241);
+        }
+      }
     }
   }
 }
