@@ -7,7 +7,7 @@
 }
 .cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item {
   display: flex; /* Utilizamos flexbox para centrar */
-  justify-content_course: center; /* Centramos horizontalmente */
+  justify-content: center; /* Centramos horizontalmente */
 }
 .cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course {
   border-radius: 16px;
@@ -24,6 +24,10 @@
 .cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .img_course {
   grid-area: img_course;
   padding: 8px;
+  overflow: hidden;
+}
+.cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .img_course img {
+  border-radius: 12px 12px 0 0;
 }
 .cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .content_course {
   grid-area: content_course;
@@ -33,7 +37,7 @@
   width: 100%;
   height: auto;
   font-size: 1em;
-  line-height: 1.2em;
+  line-height: 2em;
   font-weight: 500;
 }
 .cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .content_course hr {
@@ -43,12 +47,27 @@
 }
 .cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .content_course p {
   font-size: 0.8em;
-  height: 80px;
+  height: 60px;
   overflow: hidden;
   margin-bottom: 0;
 }
 .cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .cta_course {
   grid-area: cta_course;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+.cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .cta_course .course-btn {
+  background-color: #2f80ed;
+  padding: 12px 20px;
+  border-radius: 6px;
+  /* Button/Base */
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12px; /* 100% */
 }
 
 h1 {

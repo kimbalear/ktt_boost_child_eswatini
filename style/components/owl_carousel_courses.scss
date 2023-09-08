@@ -10,7 +10,7 @@
         padding-bottom: 8px;
         .item {
           display: flex; /* Utilizamos flexbox para centrar */
-          justify-content_course: center; /* Centramos horizontalmente */
+          justify-content: center; /* Centramos horizontalmente */
           //align-items: center; /* Centramos verticalmente */
 
           &__card_course {
@@ -34,6 +34,10 @@
             .img_course {
               grid-area: img_course;
               padding: 8px;
+              overflow: hidden;
+              img {
+                border-radius: 12px 12px 0 0;
+              }
             }
 
             .content_course {
@@ -44,7 +48,7 @@
                 width: 100%;
                 height: auto;
                 font-size: 1em;
-                line-height: 1.2em;
+                line-height: 2em;
                 font-weight: 500;
               }
               hr {
@@ -54,7 +58,7 @@
               }
               p {
                 font-size: 0.8em;
-                height: 80px;
+                height: 60px;
                 overflow: hidden;
                 margin-bottom: 0;
               }
@@ -62,6 +66,22 @@
 
             .cta_course {
               grid-area: cta_course;
+              display: flex;
+              justify-self: center;
+              align-self: center;
+
+              .course-btn {
+                background-color: #2f80ed;
+                padding: 12px 20px;
+                border-radius: 6px;
+                /* Button/Base */
+                text-decoration: none;
+                color: white;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 12px; /* 100% */
+              }
             }
           }
         }

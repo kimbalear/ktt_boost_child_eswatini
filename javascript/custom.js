@@ -70,8 +70,17 @@ require(["jquery"], function ($) {
             courses.forEach(function (course) {
               // Extraer la URL de la imagen del resumen del curso
               var imgSrcMatch = course.summary.match(/<img.*?src="(.*?)"/);
-              var imgSrc = imgSrcMatch ? imgSrcMatch[1].replace('/webservice', '') : "path/to/default/image.jpg";
- // imagen predeterminada si no hay imagen del resumen del curso
+              var imgSrc = imgSrcMatch
+                ? imgSrcMatch[1].replace("/webservice", "")
+                : "path/to/default/image.jpg";
+              // imagen predeterminada si no hay imagen del resumen del curso
+              // Limpiar course.summary
+              course.summary = course.summary
+                .replace(/<hr\s*\/?>/g, "")
+                .replace(
+                  /<p><span><img class="[^"]+" src="[^"]+" alt="[^"]+" width="[^"]+" height="[^"]+" \/><\/span><\/p>/g,
+                  ""
+                );
               var courseUrl =
                 "http://localhost:8080/course/view.php?id=" + course.id;
 
@@ -123,7 +132,7 @@ require(["jquery"], function ($) {
                   "</div>" +
                   '<div class="cta_course"><a href="' +
                   courseUrl +
-                  '" target="_blank" class="course-btn">Ir al curso</a></div>' +
+                  '" target="_blank" class="course-btn">Go to the course</a></div>' +
                   "</div></div>"
               );
             });
@@ -136,7 +145,7 @@ require(["jquery"], function ($) {
               autoplayTimeout: 2500,
               stagePadding: 8,
               nav: false,
-              dots: false,
+              dots: true,
               responsive: {
                 0: {
                   items: 1,
