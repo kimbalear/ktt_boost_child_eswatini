@@ -85,34 +85,7 @@ require(["jquery"], function ($) {
                 "http://localhost:8080/course/view.php?id=" + course.id;
 
               // Logs para depuración
-              console.log("id:", course.id);
-              console.log("shortname:", course.shortname);
-              console.log("categoryid: " + course.categoryid);
-              console.log("categorysortorder: " + course.categorysortorder);
-              console.log("fullname: " + course.fullname);
-              console.log("displayname: " + course.displayname);
-              console.log("idnumber: " + course.idnumber);
-              console.log("summary: " + course.summary);
-              console.log("summaryformat: " + course.summaryformat);
-              console.log("format: " + course.format);
-              console.log("showgrades: " + course.showgrades);
-              console.log("newsitems: " + course.newsitems);
-              console.log("startdate: " + course.startdate);
-              console.log("enddate: " + course.enddate);
-              console.log("numsections: " + course.numsections);
-              console.log("maxbytes: " + course.maxbytes);
-              console.log("showreports: " + course.showreports);
-              console.log("visible: " + course.visible);
-              console.log("hiddensection: " + course.hiddensection);
-              console.log("groupmode: " + course.groupmode);
-              console.log("groupmodeforce: " + course.groupmodeforce);
-              console.log("defaultgroupingid: " + course.defaultgroupingid);
-              console.log("timecreated: " + course.timecreated);
-              console.log("timemodified: " + course.timemodified);
-              console.log("enablecompletion: " + course.enablecompletion);
-              console.log("completionnotify: " + course.completionnotify);
-              console.log("forcetheme: " + course.forcetheme);
-              console.log("courseformatoptions: " + course.courseformatoptions);
+              console.log("course:", course);
               // ... (otros logs)
 
               // Agregar al carrusel
