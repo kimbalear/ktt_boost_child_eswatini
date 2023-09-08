@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.cstm_courses_component {
-  padding: 0.5rem;
-  border: 1px solid #dee2e6;
-  margin-bottom: 0.5rem;
-}
 .cstm_courses_component .owl-carousel {
   display: flex;
 }
-.cstm_courses_component .owl-carousel .item {
+.cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage {
+  padding-bottom: 8px;
+}
+.cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item {
   display: flex; /* Utilizamos flexbox para centrar */
   justify-content_course: center; /* Centramos horizontalmente */
 }
-.cstm_courses_component .owl-carousel .item__card_course {
-  border: 1px solid #dee2e6;
+.cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course {
+  border-radius: 16px;
+  background: #fff;
+  /* Shadow/shadow-sm */
+  box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 100px 50px;
@@ -20,32 +21,34 @@
   grid-auto-flow: row;
   grid-template-areas: "img_course" "content_course" "cta_course";
 }
-.cstm_courses_component .owl-carousel .item__card_course .img_course {
+.cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .img_course {
   grid-area: img_course;
-  border-bottom: 1px solid #dee2e6;
+  padding: 8px;
 }
-.cstm_courses_component .owl-carousel .item__card_course .content_course {
+.cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .content_course {
   grid-area: content_course;
+  padding: 0 8px;
 }
-.cstm_courses_component .owl-carousel .item__card_course .content_course .name_course {
+.cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .content_course .name_course {
   width: 100%;
   height: auto;
-  font-size: 1.1em;
+  font-size: 1em;
+  line-height: 1.2em;
   font-weight: 500;
-  line-height: 1.25em;
 }
-.cstm_courses_component .owl-carousel .item__card_course .content_course hr {
+.cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .content_course hr {
   visibility: hidden;
+  border: 0;
+  margin: 0;
 }
-.cstm_courses_component .owl-carousel .item__card_course .content_course #Content .boxed #lipsum p {
+.cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .content_course p {
   font-size: 0.8em;
-  font-weight: 300;
-  line-height: 1em;
-  color: red;
+  height: 80px;
+  overflow: hidden;
+  margin-bottom: 0;
 }
-.cstm_courses_component .owl-carousel .item__card_course .cta_course {
+.cstm_courses_component .owl-carousel .owl-stage-outer .owl-stage .item__card_course .cta_course {
   grid-area: cta_course;
-  background-color: rgb(169, 169, 241);
 }
 
 h1 {

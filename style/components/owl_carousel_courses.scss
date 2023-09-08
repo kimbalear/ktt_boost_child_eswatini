@@ -1,64 +1,69 @@
 .cstm_courses_component {
-  padding: 0.5rem;
-  border: 1px solid #dee2e6;
-  margin-bottom: 0.5rem;
+  //padding: 0.5rem;
+  //border: 1px solid #dee2e6;
   //border-radius: 0.5rem;
 
   .owl-carousel {
     display: flex;
-    .item {
-      display: flex; /* Utilizamos flexbox para centrar */
-      justify-content_course: center; /* Centramos horizontalmente */
-      //align-items: center; /* Centramos verticalmente */
+    .owl-stage-outer {
+      .owl-stage {
+        padding-bottom: 8px;
+        .item {
+          display: flex; /* Utilizamos flexbox para centrar */
+          justify-content_course: center; /* Centramos horizontalmente */
+          //align-items: center; /* Centramos verticalmente */
 
-      &__card_course {
-        border: 1px solid #dee2e6;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 100px 50px;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "img_course"
-          "content_course"
-          "cta_course";
+          &__card_course {
+            border-radius: 16px;
+            background: #fff;
 
-        .img_course {
-          grid-area: img_course;
-          border-bottom: 1px solid #dee2e6;
-        }
+            /* Shadow/shadow-sm */
+            box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05),
+              0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+            //border: 1px solid #dee2e6;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 100px 50px;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "img_course"
+              "content_course"
+              "cta_course";
 
-        .content_course {
-          grid-area: content_course;
+            .img_course {
+              grid-area: img_course;
+              padding: 8px;
+            }
 
-          .name_course {
-            width: 100%;
-            height: auto;
-            font-size: 1.1em;
-            font-weight: 500;
-            line-height: 1.25em;
-          }
-          hr {
-            visibility: hidden;
-          }
+            .content_course {
+              grid-area: content_course;
+              padding: 0 8px;
 
-          #Content {
-            .boxed {
-              #lipsum {
-                p {
-                  font-size: 0.8em;
-                  font-weight: 300;
-                  line-height: 1em;
-                  color: red;
-                }
+              .name_course {
+                width: 100%;
+                height: auto;
+                font-size: 1em;
+                line-height: 1.2em;
+                font-weight: 500;
+              }
+              hr {
+                visibility: hidden;
+                border: 0;
+                margin: 0;
+              }
+              p {
+                font-size: 0.8em;
+                height: 80px;
+                overflow: hidden;
+                margin-bottom: 0;
               }
             }
-          }
-        }
 
-        .cta_course {
-          grid-area: cta_course;
-          background-color: rgb(169, 169, 241);
+            .cta_course {
+              grid-area: cta_course;
+            }
+          }
         }
       }
     }

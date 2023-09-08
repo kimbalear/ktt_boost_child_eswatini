@@ -63,47 +63,71 @@ require(["jquery"], function ($) {
           success: function (response) {
             var owl = $("#owl-carousel-courses");
             owl.empty(); // Vacía el contenedor antes de agregar nuevos elementos
+
             // Descarta el primer elemento del array
             var courses = response.slice(1);
+
             courses.forEach(function (course) {
+              // Extraer la URL de la imagen del resumen del curso
+              var imgSrcMatch = course.summary.match(/<img.*?src="(.*?)"/);
+              var imgSrc = imgSrcMatch ? imgSrcMatch[1].replace('/webservice', '') : "path/to/default/image.jpg";
+ // imagen predeterminada si no hay imagen del resumen del curso
+              var courseUrl =
+                "http://localhost:8080/course/view.php?id=" + course.id;
+
+              // Logs para depuración
+              console.log("id:", course.id);
+              console.log("shortname:", course.shortname);
+              console.log("categoryid: " + course.categoryid);
+              console.log("categorysortorder: " + course.categorysortorder);
+              console.log("fullname: " + course.fullname);
+              console.log("displayname: " + course.displayname);
+              console.log("idnumber: " + course.idnumber);
+              console.log("summary: " + course.summary);
+              console.log("summaryformat: " + course.summaryformat);
+              console.log("format: " + course.format);
+              console.log("showgrades: " + course.showgrades);
+              console.log("newsitems: " + course.newsitems);
+              console.log("startdate: " + course.startdate);
+              console.log("enddate: " + course.enddate);
+              console.log("numsections: " + course.numsections);
+              console.log("maxbytes: " + course.maxbytes);
+              console.log("showreports: " + course.showreports);
+              console.log("visible: " + course.visible);
+              console.log("hiddensection: " + course.hiddensection);
+              console.log("groupmode: " + course.groupmode);
+              console.log("groupmodeforce: " + course.groupmodeforce);
+              console.log("defaultgroupingid: " + course.defaultgroupingid);
+              console.log("timecreated: " + course.timecreated);
+              console.log("timemodified: " + course.timemodified);
+              console.log("enablecompletion: " + course.enablecompletion);
+              console.log("completionnotify: " + course.completionnotify);
+              console.log("forcetheme: " + course.forcetheme);
+              console.log("courseformatoptions: " + course.courseformatoptions);
+              // ... (otros logs)
+
+              // Agregar al carrusel
               owl.append(
-                console.log("id: " + course.id),
-                console.log("shortname: " + course.shortname),
-                console.log("categoryid: " + course.categoryid),
-                console.log("categorysortorder: " + course.categorysortorder),
-                console.log("fullname: " + course.fullname),
-                console.log("displayname: " + course.displayname),
-                console.log("idnumber: " + course.idnumber),
-                console.log("summary: " + course.summary),
-                console.log("summaryformat: " + course.summaryformat),
-                console.log("format: " + course.format),
-                console.log("showgrades: " + course.showgrades),
-                console.log("newsitems: " + course.newsitems),
-                console.log("startdate: " + course.startdate),
-                console.log("enddate: " + course.enddate),
-                console.log("numsections: " + course.numsections),
-                console.log("maxbytes: " + course.maxbytes),
-                console.log("showreports: " + course.showreports),
-                console.log("visible: " + course.visible),
-                console.log("hiddensection: " + course.hiddensection),
-                console.log("groupmode: " + course.groupmode),
-                console.log("groupmodeforce: " + course.groupmodeforce),
-                console.log("defaultgroupingid: " + course.defaultgroupingid),
-                console.log("timecreated: " + course.timecreated),
-                console.log("timemodified: " + course.timemodified),
-                console.log("enablecompletion: " + course.enablecompletion),
-                console.log("completionnotify: " + course.completionnotify),
-                console.log("forcetheme: " + course.forcetheme),
-                console.log(
-                  "courseformatoptions: " + course.courseformatoptions
-                ),
-                '<div class="item"><div class="item__card_course"><div class="img_course">image</div><div class="content_course"><div class="name_course">' +
+                '<div class="item">' +
+                  '<div class="item__card_course">' +
+                  '<div class="img_course"><img src="' +
+                  imgSrc +
+                  '" alt="' +
+                  course.fullname +
+                  '"></div>' +
+                  '<div class="content_course">' +
+                  '<div class="name_course">' +
                   course.fullname +
                   "</div>" +
                   course.summary +
-                  '</div><div class="cta_course"></div></div></div>'
+                  "</div>" +
+                  '<div class="cta_course"><a href="' +
+                  courseUrl +
+                  '" target="_blank" class="course-btn">Ir al curso</a></div>' +
+                  "</div></div>"
               );
             });
+
             // Inicializa Owl Carousel solo una vez, después de agregar todos los elementos
             owl.owlCarousel({
               loop: true,
