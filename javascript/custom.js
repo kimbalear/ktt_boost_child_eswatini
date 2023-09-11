@@ -85,7 +85,9 @@ require(["jquery"], function ($) {
                 "http://localhost:8080/course/view.php?id=" + course.id;
 
               // Logs para depuración
-              console.log("course:", course);
+              console.log("ID :" + course.id)
+              console.log("courseUrl: " + courseUrl)
+              console.log("-- Course:", course);
               // ... (otros logs)
 
               // Agregar al carrusel
