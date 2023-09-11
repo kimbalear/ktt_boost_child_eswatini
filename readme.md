@@ -73,3 +73,28 @@ http://localhost/theme/ktt_boost_child/test.php
 
 TOKEN
 786b2d70191e8e690e6c3b4ac7045a45
+
+# Implementation
+## Files involved
+* config.php
+  - $THEME->javascripts = array('custom');
+  - creacion de directorio y file en el raiz del tema hijo: /javascripts/custom.js
+* mymobileapp.css
+* frontpage.mustache
+
+## Web services
+* Custom services
+  - Name: course_carousel
+  - Short name: c_carousel
+    | Enabled
+    | Authorised users only
+    |--------------------------------------
+    | Add function: core_course_get_courses
+  - Select authorised users
+
+* Create token
+  - Username/ID: Admin User
+  - Service: course_carousel
+
+* Habilitar protocolos
+* Crear un usuario especifico: Se precisa un usuario de servicios web para representar el sistema que controla moodle.
