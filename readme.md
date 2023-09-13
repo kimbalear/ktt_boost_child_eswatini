@@ -77,8 +77,10 @@ TOKEN
 # Implementation
 ## Files involved
 * config.php
+  - $THEME->sheets = ['custom'];
   - $THEME->javascripts = array('custom');
   - creacion de directorio y file en el raiz del tema hijo: /javascripts/custom.js
+
 * mymobileapp.css
 * frontpage.mustache
 
