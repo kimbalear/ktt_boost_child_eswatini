@@ -9,7 +9,7 @@ defined('MOODLE_INTERNAL') || die();
 
 // The first setting we need is the name of the theme. This should be the last part of the component name, and the same
 // as the directory name for our theme.
-$THEME->name = 'ktt_boost_child';
+$THEME->name = 'ktt_boost_child_eswatini';
 
 // This setting list the style sheets we want to include in our theme. Because we want to use SCSS instead of CSS - we won't
 // list any style sheets. If we did we would list the name of a file in the /style/ folder for our theme without any css file
@@ -51,7 +51,7 @@ $THEME->hidefromselector = false;
 // This is the function that returns the SCSS source for the main file in our theme. We override the boost version because
 // we want to allow presets uploaded to our own theme file area to be selected in the preset list.
 $THEME->scss = function($theme) {
-    return theme_ktt_boost_child_get_main_scss_content($theme);
+    return theme_ktt_boost_child_eswatini_get_main_scss_content($theme);
 };
 
 $THEME->layouts = [

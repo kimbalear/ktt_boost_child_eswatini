@@ -1,4 +1,4 @@
-# moodle-theme_ktt_boost_child
+# moodle-theme_ktt_boost_child_eswatini
 
 https://eswatini.kassai.org/
 
@@ -56,14 +56,14 @@ cd /bitnami/moodle
 ls
 
 docker ps
-docker cp D:\01NSP\repositories\ddMood\ktt_boost_child joaqu-moodle-1:/bitnami/moodle/theme/ktt_boost_child
+docker cp D:\01NSP\repositories\ddMood\ktt_boost_child_eswatini joaqu-moodle-1:/bitnami/moodle/theme/ktt_boost_child_eswatini
 
 docker exec -it joaqu-moodle-1 bash
-ls -l /bitnami/moodle/theme/ktt_boost_child/
+ls -l /bitnami/moodle/theme/ktt_boost_child_eswatini/
 
 ### del directory
 
-docker exec joaqu-moodle-1 rm -r /bitnami/moodle/theme/ktt_boost_child
+docker exec joaqu-moodle-1 rm -r /bitnami/moodle/theme/ktt_boost_child_eswatini
 
 ## Testing
-http://localhost/theme/ktt_boost_child/test.php
+http://localhost/theme/ktt_boost_child_eswatini/test.php

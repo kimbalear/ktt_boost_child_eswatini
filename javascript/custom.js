@@ -1,6 +1,8 @@
 require(['jquery'], function ($) {
   $(document).ready(function () {
 
+    $('#login').remove();
+
     //$('li[data-key="myhome"]').hide();
     //$('li[data-key="mycourses"]').hide();
     //$('li[data-key="siteadminnode"]').hide();
@@ -71,4 +73,32 @@ require(['jquery'], function ($) {
 
     // fin slider
   });
+
+  function showRandomImage(className) {
+    var images = $('.' + className);
+
+    // Comprobar el ancho de la ventana
+    if (window.innerWidth <= 713) {
+      // Si el ancho de la ventana es menor o igual a 711px
+      images.hide();
+      var randomIndex = Math.floor(Math.random() * images.length);
+      console.log(images.length);
+      images.eq(randomIndex).show();
+    } else {
+      images.hide();
+    }
+  }
+
+  // Definir el intervalo (por ejemplo, 3 segundos)
+  var intervalo = 3000; // 3000 milisegundos = 3 segundos
+
+  // Iniciar el intervalo
+  setInterval(function () {
+    showRandomImage('sl1');
+    showRandomImage('sl2');
+    showRandomImage('sl3');
+    showRandomImage('sl5');
+  }, intervalo);
+
+
 });

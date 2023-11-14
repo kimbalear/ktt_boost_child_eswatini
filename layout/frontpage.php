@@ -105,23 +105,23 @@ $templatecontext = [
     'overflow' => $overflow,
     'headercontent' => $headercontent,
     'addblockbutton' => $addblockbutton,
-    'imagegirlpower' => $OUTPUT->image_url('eswatini/girlPower', 'theme_ktt_boost_child'),
-    'imagegirlpower_footer' => $OUTPUT->image_url('eswatini/girlPower_Footer', 'theme_ktt_boost_child'),
-    'imageeswatini' => $OUTPUT->image_url('eswatini/eswatini', 'theme_ktt_boost_child'),
-    'imagegmaveric' => $OUTPUT->image_url('eswatini/Maverick', 'theme_ktt_boost_child'),
-    'imagepsi' => $OUTPUT->image_url('eswatini/psi-eswatini', 'theme_ktt_boost_child'),
-    'imageone' => $OUTPUT->image_url('imgs/sldr1', 'theme_ktt_boost_child'),
-    'imagetwo' => $OUTPUT->image_url('imgs/sldr2', 'theme_ktt_boost_child'),
-    'imagethree' => $OUTPUT->image_url('imgs/sldr3', 'theme_ktt_boost_child'),
-    'imagefour' => $OUTPUT->image_url('imgs/sldr4', 'theme_ktt_boost_child'),
-    'imagefive' => $OUTPUT->image_url('imgs/sldr5', 'theme_ktt_boost_child')
+    'imagegirlpower' => $OUTPUT->image_url('eswatini/girlPower', 'theme_ktt_boost_child_eswatini'),
+    'imagegirlpower_footer' => $OUTPUT->image_url('eswatini/girlPower_Footer', 'theme_ktt_boost_child_eswatini'),
+    'imageeswatini' => $OUTPUT->image_url('eswatini/eswatini', 'theme_ktt_boost_child_eswatini'),
+    'imagegmaveric' => $OUTPUT->image_url('eswatini/Maverick', 'theme_ktt_boost_child_eswatini'),
+    'imagepsi' => $OUTPUT->image_url('eswatini/psi-eswatini', 'theme_ktt_boost_child_eswatini'),
+    'imageone' => $OUTPUT->image_url('imgs/sldr1', 'theme_ktt_boost_child_eswatini'),
+    'imagetwo' => $OUTPUT->image_url('imgs/sldr2', 'theme_ktt_boost_child_eswatini'),
+    'imagethree' => $OUTPUT->image_url('imgs/sldr3', 'theme_ktt_boost_child_eswatini'),
+    'imagefour' => $OUTPUT->image_url('imgs/sldr4', 'theme_ktt_boost_child_eswatini'),
+    'imagefive' => $OUTPUT->image_url('imgs/sldr5', 'theme_ktt_boost_child_eswatini')
 ];
 
-$link_about = __DIR__ . '/theme/ktt_boost_child/about.php';
+$link_about = __DIR__ . '/theme/ktt_boost_child_eswatini/about.php';
 
 $data = [
     'link_about' => $link_about,
     // Otros datos necesarios para la plantilla
 ];
 
-echo $OUTPUT->render_from_template('theme_ktt_boost_child/frontpage', $templatecontext, $data);
+echo $OUTPUT->render_from_template('theme_ktt_boost_child_eswatini/frontpage', $templatecontext, $data);
